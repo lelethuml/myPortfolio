@@ -12,7 +12,7 @@ return (
                     <h5 data-aos = "fade-right" 
                     data-aos-duration = '1500' 
                     className='text-headingColor font-[600] text-[16px]'>
-                        Hello welcome
+                        Hello welcome,
                     </h5>
                     <h1 data-aos = "fade-up" 
                     data-aos-duration = '1500' 

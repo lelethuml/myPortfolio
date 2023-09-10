@@ -12,9 +12,9 @@ return <header className = "w-full h-[80px] leading-[80px] flex items-center">
                 </span>
                 <div className="leading -[20px]">
                     <h2 className = "text-xl text-smallTextColor font-[700]">Lelethu </h2>
-                    <p className = " text-smallTextColor text-[14px] font-[500]">
+                    {/* <p className = " text-smallTextColor text-[14px] font-[500]">
                         Personal
-                    </p>
+                    </p> */}
                 </div>
             </div>
             {/* =========== logo end======== */}

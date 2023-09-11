@@ -1,7 +1,57 @@
-import react from 'react'; 
+import react ,{ useEffect, useRef } from "react";
+// import react {useRef, useEffect} from 'react'; 
+
 
 const Header = () =>{
-return <header className = "w-full h-[80px] leading-[80px] flex items-center">
+    const headerRef = useRef(null)
+
+    const steackyHeaderFunc = ()=>{
+        window.addEventListener('scroll', ()=>{
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop >80)
+            {
+                headerRef.current.classList.add('sticky_header')
+            }else
+            {
+                headerRef.current.classList.remove('sticky_header')
+            }
+        })
+    }
+
+    useEffect(()=>{
+        steackyHeaderFunc()
+
+        return window.removeEventListener('scroll', steackyHeaderFunc)
+    },[]);
+
+    const handleClick = (e) => {
+        e.preventDefault();
+      
+        const targetAttr = e.target.getAttribute('href');
+      
+        // Check if targetAttr exists and is not empty
+        if (targetAttr) {
+          // Remove the '#' symbol from targetAttr to get the selector
+          const selector = targetAttr.slice(1); // Remove the '#' symbol
+      
+          // Find the target element using the selector
+          const targetElement = document.getElementById(selector); // Assuming you are using IDs as selectors
+      
+          // Check if the target element exists
+          if (targetElement) {
+            const location = targetElement.offsetTop;
+      
+            window.scrollTo({
+              top: location - 80,
+              left: 0,
+            });
+          } else {
+            console.error(`Element with ID '${selector}' not found.`);
+          }
+        }
+      };
+
+return <header ref= {headerRef} 
+className = "w-full h-[80px] leading-[80px] flex items-center">
 
     <div className="container">
         <div className = "flex items-center justify-between">
@@ -22,16 +72,18 @@ return <header className = "w-full h-[80px] leading-[80px] flex items-center">
             <div className="menue">
                 <ul className="flex items-center gap-10">
                     <li>
-                        <a className="text-smallTextColor font-[600]" href = "About">About </a>
+                        {/* <a onClick = {handleClick} className="text-smallTextColor font-[600]" href = "About">About </a> */}
+                        <a onClick={handleClick} className="text-smallTextColor font-[600]" href="#about">About</a>
+
                     </li>
                     <li>
-                        <a className="text-smallTextColor font-[600]" href = "Services"> Services</a>
+                        <a onClick = {handleClick}  className="text-smallTextColor font-[600]" href = "services"> Services</a>
                     </li>
                     <li>
-                        <a className="text-smallTextColor font-[600]" href = "Portfolio">Portfolio </a>
+                        <a onClick = {handleClick}  className="text-smallTextColor font-[600]" href = "Portfolio">Portfolio </a>
                     </li>
                     <li>
-                        <a className="text-smallTextColor font-[600]" href = "Contact"> Contact</a>
+                        <a onClick = {handleClick}  className="text-smallTextColor font-[600]" href = "Contact"> Contact</a>
                     </li>
                     
 

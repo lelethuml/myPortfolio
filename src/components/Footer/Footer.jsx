@@ -7,7 +7,7 @@ return <footer className='bg-[#12141e] pt-12' >
      <div className='container'>
         <div className='sm:flex items center justify-between md:gap-8'>
             <div className='w-full sm:w-1/2'>
-                <h2 className='text-[26px] leading-10 text-white font-[600] mb-5 md:text-[2rem]'>xdcfvgbh ryubhi yvbu</h2>
+                <h2 className='text-[26px] leading-10 text-white font-[600] mb-5 md:text-[2rem]'>Contacts:</h2>
                 <a href="Contact">
                             <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-3 rounded-[8px]'><i class = "ri-mail--line"></i> Hire me</button></a>
                             <a href = "Portfolio" class ="text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor "

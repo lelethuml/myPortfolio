@@ -18,7 +18,7 @@ return <section id= "portfolio">
                 data ?.map((Portfolio,index)=>(
                     <div className='group max-w-full sm:w-[48.5%] md:w-[31.8] lg:w-[32.2%] relative z-[1]'>
                         <figure>
-                            <img className='rounded-[8px]' src ={Portfolio.imgUrl } alt=" " />
+                            {/* <img className='rounded-[8px]' src ={Portfolio.imgUrl } alt=" " /> */}
                         </figure>
 
                     </div>

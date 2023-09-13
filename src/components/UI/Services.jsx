@@ -1,4 +1,4 @@
-import react from 'react'; 
+import React from 'react'; 
 import frontendImg from '../../assets/images/front-end.png'
 import backendImg from '../../assets/images/backend.png'
 
@@ -152,6 +152,7 @@ Data Migration: Seamlessly migrate data between databases or platforms while pre
                             </div>
 
                            </div>
+                           
 
                     </div>
 

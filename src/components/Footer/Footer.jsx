@@ -1,4 +1,4 @@
-import react from 'react'; 
+import React from 'react'; 
 
 const Footer = () =>{
 return <footer className='bg-[#12141e] pt-12' >
@@ -16,7 +16,7 @@ return <footer className='bg-[#12141e] pt-12' >
                             </a>
 
             </div>
-            <div className='flex items-center gap-4 flex-wrap md:gap-2 mt-10 '>
+            {/* <div className='flex items-center gap-4 flex-wrap md:gap-2 mt-10 '>
                 <span className='text-gray-300 font-[600] text-[15px]'>
                     Follow me:
                 </span>
@@ -25,7 +25,16 @@ return <footer className='bg-[#12141e] pt-12' >
                         <i class='ri-github-line'></i>
                          </a>
                 </span>
-            </div>
+                <span>
+                            <a
+                            href = "Linkedin"
+                            className='text-smallTextColor text-[30px] font-[600]'
+                            >
+                               <i class="ri-linkedin-line"></i>
+
+                            </a>
+                            </span>
+            </div> */}
              </div>
 
      </div>

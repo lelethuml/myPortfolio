@@ -1,5 +1,7 @@
-import react from 'react'; 
-import data from '../../assets/data/portfolioData'
+import React from 'react'; 
+// import data from '../../assets/data/portfolioData'
+import secure from '../../assets/images/Secure-legacy.png'
+import movie from '../../assets/images/Movie-room.png'
 
 const Portfolio = () =>{
 return <section id= "portfolio">
@@ -15,14 +17,23 @@ return <section id= "portfolio">
         </div>
         <div className='flex item-center gap-4 flex-wrap mt-12'>
             {
-                data ?.map((Portfolio,index)=>(
-                    <div className='group max-w-full sm:w-[48.5%] md:w-[31.8] lg:w-[32.2%] relative z-[1]'>
-                        <figure>
-                            {/* <img className='rounded-[8px]' src ={Portfolio.imgUrl } alt=" " /> */}
-                        </figure>
+                // data ?.map((Portfolio,index)=>(
+                    <div class=' flex  justify-between group max-w-full sm:w-[48.5%] md:w-[31.8] lg:w-[32.2%] flex-row relative z-[1]'>
+                        {/* <figure>
+                            
+                        </figure> */}
+                       
+
+                        <img class='mr-8 justify-between rounded-[8px]' src ={secure} alt=" " />
+                            <img className='rounded-[8px]' src ={movie} alt=" " />
+                       
+                        
+
 
                     </div>
-                ))
+                    
+                    
+                // ))
             }
              </div>
 

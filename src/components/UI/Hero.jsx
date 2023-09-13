@@ -1,4 +1,4 @@
-import react from 'react'; 
+import React from 'react'; 
 import profileImg from '../../assets/images/Profilepic-portfolio.jpeg';
 import CountUp from 'react-countup';
 
@@ -37,7 +37,7 @@ return (
                         <span>
                             <i class="ri-apps-2-line"></i>
                         </span>
-                        -with a passion for tackling real-world challenges through code. With 1 year experience in the field and a strong foundation in communication networks, my journey into software development began in Digital Academy and has been marked by continuous learning and growth. I specialize in both front-end and back-end development, proficient in technologies like React, Angular and  Node.js. I'm dedicated to crafting clean and maintainable code, and I believe in the power of collaboration and open-source contributions. Beyond coding, you'll find me exercising which fuel my creativity and energy levels being high for when I am at work. I'm always eager to connect with fellow developers and collaborators to explore new opportunities and create meaningful solutions. Let's connect and innovate together!
+                        -with a passion for tackling real-world challenges through code.I have  1 year experience in the field and a strong foundation in communication networks, my journey into software development began in Digital Academy and has been marked by continuous learning and growth. I specialize in both front-end and back-end development, proficient in technologies like React, Angular and  Node.js. I'm dedicated to crafting clean and maintainable code, and I believe in the power of collaboration and open-source contributions. Beyond coding, you'll find me exercising which fuel my creativity and energy levels being high for when I am at work. I'm always eager to connect with fellow developers and collaborators to explore new opportunities and create meaningful solutions. Let's connect and innovate together!
 
 
 
@@ -50,18 +50,19 @@ return (
                             </span>
                             <span>
                             <a
-                            href = "Github"
+                            href = " https://github.com/lelethuml"
                             className='text-smallTextColor text-[30px] font-[600]'
                             >
-                                <i class="ri-github-fill"></i>
+                                <i class="ri-github-line"></i>
 
                             </a>
                             </span>
                             <span>
                             <a
-                            href = "Linkedin"
+                            href = " https://www.linkedin.com/feed/"
                             className='text-smallTextColor text-[30px] font-[600]'
                             >
+
                                 <i class="ri-linkedin-box-fill"></i>
 
                             </a>

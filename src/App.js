@@ -1,6 +1,7 @@
-import { useEffect } from "react";
-import 'aos/dist/aos.css'; // Import the CSS file (if needed)
-import AOS from 'aos'; // Import the 'aos' library with an uppercase 'A'
+import React, { useEffect } from "react";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import React Router components
 
 import "./App.css";
 
@@ -10,23 +11,25 @@ import Hero from "./components/UI/Hero";
 import Services from "./components/UI/Services";
 import Portfolio from "./components/UI/Portfolio";
 
-
 function App() {
   useEffect(() => {
-    AOS.init(); // Corrected to use 'AOS.init()'
+    AOS.init();
   }, []);
 
-  return <>
-    <Header/>
-    <main>
-      <Hero/>
-      <Services/>
-      <Portfolio/>
-    </main>
-
-    <Footer/>
-
-  </>
+  return (
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/Hero" element={<Hero />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;

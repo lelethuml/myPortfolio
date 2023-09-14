@@ -14,6 +14,7 @@ return <footer className='bg-[#12141e] pt-12' >
                             >
                                 See portfolio
                             </a>
+                            
 
             </div>
             {/* <div className='flex items-center gap-4 flex-wrap md:gap-2 mt-10 '>

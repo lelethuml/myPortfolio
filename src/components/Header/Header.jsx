@@ -1,4 +1,6 @@
 import React ,{ useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import Portfolio from "../UI/Portfolio";
 // import {browser Link } from "react-dom"
 
 // import react {useRef, useEffect} from 'react'; 
@@ -75,18 +77,18 @@ className = "w-full h-[80px] leading-[80px] flex items-center">
                 <ul className="flex items-center gap-10">
                     <li>
                         {/* <a onClick = {handleClick} className="text-smallTextColor font-[600]" href = "About">About </a> */}
-                        <a onClick={handleClick} className="text-smallTextColor font-[600]" href="#about">About</a>
+                        <Link to={'/Hero'} className="text-smallTextColor font-[600]">About</Link>
 
                     </li>
                     <li>
-                        <a onClick = {handleClick}  className="text-smallTextColor font-[600]" href = "services"> Services</a>
+                        <Link to={'Services'} className="text-smallTextColor font-[600]" > Services</Link>
                     </li>
                     <li>
-                        <a onClick = {handleClick}  className="text-smallTextColor font-[600]" href = "Portfolio">Portfolio </a>
+                        <Link to = {'Portfolio'}  className="text-smallTextColor font-[600]" >Portfolio </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <a onClick = {handleClick}  className="text-smallTextColor font-[600]" href = "Contact"> Contact</a>
-                    </li>
+                    </li> */}
                     
 
                 </ul>

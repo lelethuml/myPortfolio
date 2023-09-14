@@ -52,6 +52,7 @@ Cross-Browser Compatibility: Ensure your web applications work flawlessly across
                                 
 
                             </div>
+                            
 
                            </div>
                            {/* =========== right card======== */}
@@ -112,7 +113,9 @@ Data Migration: Seamlessly migrate data between databases or platforms while pre
                                 </div>
                                 <div className='rounded-full bg-primaryColor border-white border-4 w-10 h-10 left-8 absolute-left-1/2 transform  -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
                                     <figure>
+                                        
                                         <img src= {frontendImg} alt = " "/>
+                                        
                                     </figure>
 
                                 </div>
@@ -155,6 +158,7 @@ Data Migration: Seamlessly migrate data between databases or platforms while pre
                            
 
                     </div>
+                    
 
                 </div>
 

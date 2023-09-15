@@ -1,6 +1,8 @@
 import React from 'react'; 
 import profileImg from '../../assets/images/Profilepic-portfolio.jpeg';
 import CountUp from 'react-countup';
+// import resume from '../../assets/images/'
+
 
 const Hero = () =>{
 return (
@@ -16,19 +18,19 @@ return (
                     </h5>
                     <h1 data-aos = "fade-up" 
                     data-aos-duration = '1500' 
-                    className='text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5'>I am Lelethu Mlinjana<br />Software developer
+                    className='text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5'>I am Lelethu Mlinjana<br />Full Stack Developer
                     </h1>
-                    {/* <div data-aos = "fade-up" 
+                    <div data-aos = "fade-up" 
                     data-aos-duration = '1800' data-aos-delay= "200" 
                     className='flex items-center gap-6 mt-7'
                     >
-                        <a href="Contact">
-                            <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-3 rounded-[8px]'><i class = "ri-mail--line"></i> Hire me</button></a>
-                            <a href = "Portfolio" class ="text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor "
+                        {/* <a href="Contact">
+                            <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-3 rounded-[8px]'><i class = "ri-mail--line"></i> Hire me</button></a> */}
+                            {/* <a href = "Portfolio" class ="text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor "
                             >
                                 See portfolio
-                            </a>
-                    </div> */}
+                            </a> */}
+                    </div>
                     <p
                        data-aos = "fade-left" 
                        data-aos-duration = '1500' 
@@ -44,6 +46,13 @@ return (
 
 
                         </p>
+                        <div style={{ marginTop: '20px' }}>
+  <a href="https://drive.google.com/file/d/1Za6jsVbyKxf6KdDQIiqxwh7OTJXcYrWl/view?usp=drive_link" target="_blank" rel="noopener noreferrer" download>
+    <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-3 rounded-[8px]'>
+      <i className="ri-mail--line"></i> Hire me
+    </button>
+  </a>
+</div>
                         <div className = "flex items-center gap-9 mt-14">
                             <span className='text-smallTextColor text-[15px] font-[600]'>
                                 Follow me:
@@ -114,7 +123,7 @@ return (
                             </h4>   
 
                         </div>
-                        <div className='mb-10'>
+                        {/* <div className='mb-10'>
                             <h2 className='text-headingColor font-[700] text-[32px]'> 
                             <CountUp start = {0} end = {6} duration={2} suffix='+'/>
                             
@@ -123,7 +132,7 @@ return (
                             Years of experience
                             </h4>   
 
-                        </div>
+                        </div> */}
 
                     </div>
                     {/* =========== hero content right end======== */}

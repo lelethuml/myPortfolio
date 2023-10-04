@@ -96,19 +96,19 @@ className = "w-full h-[80px] leading-[80px] flex items-center">
             </div>
             {/* =========== menue end======== */}
              {/* =========== menue right======== */}
-             <div className="flex items-center gap-4"> 
+             {/* <div className="flex items-center gap-4"> 
              <button className="flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white hover:font-[500] ease-in duration-300">
                 <i class = "ri-send-plane-line"></i> Lets talk
-             </button>
-             <span className="text-2xl text-smallTextColor ">
+             </button> */}
+             {/* <span className="text-2xl text-smallTextColor ">
                 <i class ="ri-menu-line"></i> 
-                </span>
+                </span> */}
              
              </div>
               {/* =========== menue end======== */}
              </div>
 
-    </div>
+    {/* </div> */}
 </header>
 };
 

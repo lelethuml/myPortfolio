@@ -46,13 +46,13 @@ return (
 
 
                         </p>
-                        <div style={{ marginTop: '20px' }}>
+                        {/* <div style={{ marginTop: '20px' }}>
   <a href="https://drive.google.com/file/d/1Za6jsVbyKxf6KdDQIiqxwh7OTJXcYrWl/view?usp=drive_link" target="_blank" rel="noopener noreferrer" download>
     <button className='bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-3 rounded-[8px]'>
       <i className="ri-mail--line"></i> Hire me
     </button>
   </a>
-</div>
+</div> */}
                         <div className = "flex items-center gap-9 mt-14">
                             <span className='text-smallTextColor text-[15px] font-[600]'>
                                 Follow me:

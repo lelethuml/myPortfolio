@@ -3,13 +3,13 @@ import portfolioImg02 from "../images/portfolio-02.jpg";
 import portfolioImg03 from "../images/portfolio-03.jpg";
 import portfolioImg04 from "../images/portfolio-04.jpg";
 import portfolioImg05 from "../images/portfolio-05.jpg";
-import portfolioImg06 from "../images/portfolio-06.jpg";
-import portfolioImg07 from "../images/portfolio-07.jpg";
+import movie from "../images/Movie-room.png";
+import secure  from "../images/Secure-legacy.png";
 
 const portfolios = [
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: secure ,
     category: "Web Design",
     title: "Finance Technology Website",
     description:
@@ -19,7 +19,7 @@ const portfolios = [
   },
   {
     id: "02",
-    imgUrl: portfolioImg04,
+    imgUrl: movie,
     category: "Ux",
     title: "Video Conference Website",
     description:

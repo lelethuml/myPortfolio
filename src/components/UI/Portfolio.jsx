@@ -138,6 +138,7 @@
 import React from "react";
 import secure from '../../assets/images/Secure-legacy.png'
 import movie from '../../assets/images/Movie-room.png'
+import portfolio from '../../assets/images/Portfolio 2023-10-11 at 09.38.45.png'
 
 const ProjectPage = () => {
   // Sample project data
@@ -146,7 +147,7 @@ const ProjectPage = () => {
       id: 1,
       name: "The Movie Room",
       description: " Movie Room is your ultimate movie companion. Register, search for movies, and discover all the details you need, from release dates to actor information. Save movies for later and never miss a flick. It's your personal cinema at your fingertips!",
-      imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.interestguru.sg%2Fchina-taiping-i-secure-legacy-review%2F&psig=AOvVaw0J_ZjAFFd9UUwpybuSm-m9&ust=1697012421283000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDh5ZiG64EDFQAAAAAdAAAAABAf", // Replace with your project image URL
+      imageUrl: movie, // Replace with your project image URL
       websiteUrl: "https://example.com/project3-website", // Add website URL for Project 3
 
     },
@@ -154,7 +155,7 @@ const ProjectPage = () => {
       id: 2,
       name: "Secure Legacy",
       description: "Secure Legacy is your trusted guide to  your wealth insurance options. We demystify complex financial jargon and empower you with easy-to-understand insights, ensuring you make informed choices for a secure financial future.",
-      imageUrl: "https://example.com/project2-image.jpg", // Replace with your project image URL
+      imageUrl: secure, // Replace with your project image URL
       websiteUrl: "https://secure-legacy-v1.vercel.app/home", // Add website URL for Project 3
       
 
@@ -163,7 +164,7 @@ const ProjectPage = () => {
       id: 3,
       name: "Portfolio",
       description: "My web portfolio showcases my journey as a full-stack developer. Explore a collection of projects, from front-end designs to back-end functionality. Discover my skills, passion, and commitment to creating innovative web solutions.",
-      imageUrl: "https://example.com/project3-image.jpg",
+      imageUrl: portfolio,
       websiteUrl: "https://my-portfolio-blush-gamma.vercel.app/Portfolio", // Add website URL for Project 3
 
     },
@@ -179,8 +180,8 @@ const ProjectPage = () => {
             className="bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105"
           >
             <img
-            //   src={project.imageUrl}
-              src={movie}
+              src={project.imageUrl}
+            
               alt={project.name}
               className="w-full h-48 object-cover object-center"
             />
